@@ -1,0 +1,587 @@
+{
+  "@@locale": "tr",
+  "commonCancel": "İptal",
+  "commonUnexpectedError": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.",
+  "splashLoading": "Yükleniyor…",
+  "setupSubtitle": "Kasanızı bu şifreyle açacaksınız. Uzun ve size özel bir şifre seçin.",
+  "setupPasswordLabel": "Ana şifre",
+  "setupConfirmLabel": "Ana şifre (tekrar)",
+  "setupPasswordTooShort": "Ana şifre en az {count} karakter olmalı.",
+  "@setupPasswordTooShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "setupPasswordMismatch": "Şifreler eşleşmiyor.",
+  "setupPasswordRequired": "Lütfen bir ana şifre girin.",
+  "setupWarningBody": "Ana şifrenizi unutursanız verileriniz kurtarılamaz. KilitDepo şifrenizi hiçbir yerde saklamaz ve sıfırlayamaz.",
+  "setupAcknowledge": "Anladım, ana şifremi unutursam verilerimin kurtarılamayacağını kabul ediyorum.",
+  "setupAcknowledgeRequired": "Devam etmek için uyarıyı onaylayın.",
+  "setupEnableBiometric": "Biyometrik girişi etkinleştir",
+  "setupEnableBiometricHint": "Parmak izi veya Face ID ile hızlı açma",
+  "setupCreateButton": "Kasayı oluştur",
+  "setupCreating": "Kasanız güvenli şekilde oluşturuluyor…",
+  "setupBiometricFailed": "Kasa oluşturuldu ancak biyometrik giriş etkinleştirilemedi.",
+  "strengthLabel": "Şifre gücü: {level}",
+  "@strengthLabel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "strengthVeryWeak": "Çok zayıf",
+  "strengthWeak": "Zayıf",
+  "strengthFair": "Orta",
+  "strengthStrong": "Güçlü",
+  "strengthVeryStrong": "Çok güçlü",
+  "loginTitle": "Kasanızı açın",
+  "loginPasswordLabel": "Ana şifre",
+  "loginUnlockButton": "Kilidi aç",
+  "loginBiometricButton": "Biyometrik ile aç",
+  "loginWrongPassword": "Ana şifre yanlış.",
+  "loginCorrupted": "Kasa anahtarı okunamadı. Veriler bozulmuş olabilir.",
+  "loginBiometricFailed": "Biyometrik doğrulama yapılamadı. Ana şifrenizle giriş yapın.",
+  "loginAbout": "Hakkında",
+  "loginGuide": "Kullanma talimatı",
+  "showPassword": "Şifreyi göster",
+  "hidePassword": "Şifreyi gizle",
+  "biometricPromptTitle": "KilitDepo",
+  "biometricPromptSubtitle": "Kasanızı açmak için kimliğinizi doğrulayın",
+  "vaultTitle": "Kasam",
+  "vaultLock": "Kilitle",
+  "aboutTitle": "Hakkında",
+  "guideTitle": "Kullanma Talimatı",
+  "commonSave": "Kaydet",
+  "commonDelete": "Sil",
+  "commonEdit": "Düzenle",
+  "commonRetry": "Tekrar dene",
+  "commonCopy": "Kopyala",
+  "vaultEmptyTitle": "Kasanız henüz boş",
+  "vaultEmptyBody": "İlk şifrenizi ekleyerek başlayın. Tüm kayıtlar cihazınızda şifreli olarak saklanır.",
+  "vaultAddFirst": "Şifre ekle",
+  "vaultAdd": "Yeni kayıt",
+  "vaultSearchHint": "Başlık, kullanıcı adı veya URL ara",
+  "vaultNoResultsTitle": "Sonuç bulunamadı",
+  "vaultNoResultsBody": "Aramanızı veya filtrelerinizi değiştirmeyi deneyin.",
+  "vaultClearFilters": "Filtreleri temizle",
+  "vaultLoadError": "Kayıtlar yüklenemedi.",
+  "vaultFilterAll": "Tümü",
+  "vaultFilterFavorites": "Favoriler",
+  "vaultSort": "Sırala",
+  "sortAlphabetical": "Alfabetik (A–Z)",
+  "sortRecentlyAdded": "Son eklenen",
+  "sortRecentlyUpdated": "Son güncellenen",
+  "sortCategory": "Kategoriye göre",
+  "categorySocialMedia": "Sosyal Medya",
+  "categoryBank": "Banka",
+  "categoryEmail": "E-posta",
+  "categoryWork": "İş",
+  "categoryOther": "Diğer",
+  "entryTitleLabel": "Başlık",
+  "entryUsernameLabel": "Kullanıcı adı",
+  "entryPasswordLabel": "Şifre",
+  "entryUrlLabel": "URL",
+  "entryNotesLabel": "Notlar",
+  "entryCategoryLabel": "Kategori",
+  "entryFavoriteLabel": "Favorilere ekle",
+  "entryTitleRequired": "Başlık zorunludur.",
+  "entryPasswordRequired": "Şifre zorunludur.",
+  "entryNewTitle": "Yeni kayıt",
+  "entryEditTitle": "Kaydı düzenle",
+  "entrySaved": "Kayıt kaydedildi.",
+  "entryNotFound": "Bu kayıt bulunamadı. Silinmiş olabilir.",
+  "entryDiscardTitle": "Değişiklikler kaydedilmedi",
+  "entryDiscardBody": "Çıkarsanız yaptığınız değişiklikler kaybolacak.",
+  "entryDiscardConfirm": "Çık",
+  "entryKeepEditing": "Düzenlemeye devam et",
+  "entryFavoriteAdd": "Favorilere ekle",
+  "entryFavoriteRemove": "Favorilerden çıkar",
+  "entryShowPassword": "Şifreyi göster",
+  "entryHidePassword": "Şifreyi gizle",
+  "entryCopyPassword": "Şifreyi kopyala",
+  "entryCopyUsername": "Kullanıcı adını kopyala",
+  "entryCopyUrl": "URL'yi kopyala",
+  "entryCreatedAt": "Oluşturulma",
+  "entryUpdatedAt": "Son güncelleme",
+  "entryHistory": "Şifre geçmişi",
+  "entryHistoryCount": "{count, plural, =0{Önceki şifre yok} other{{count} önceki şifre}}",
+  "@entryHistoryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "copiedPassword": "Şifre kopyalandı. {seconds} saniye sonra panodan silinecek.",
+  "@copiedPassword": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "copiedValue": "Kopyalandı. {seconds} saniye sonra panodan silinecek.",
+  "@copiedValue": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "historyTitle": "Şifre geçmişi",
+  "historyInfo": "Bu kaydın en fazla son {count} eski şifresi saklanır.",
+  "@historyInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "historyEmpty": "Bu kaydın şifresi henüz hiç değiştirilmedi.",
+  "historyChangedAt": "Değiştirilme: {date}",
+  "@historyChangedAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "loginLockedOut": "Çok fazla hatalı deneme yapıldı. {time} sonra tekrar deneyebilirsiniz.",
+  "@loginLockedOut": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "changePasswordTitle": "Ana şifreyi değiştir",
+  "changePasswordInfo": "Kayıtlarınız yeniden şifrelenmez; yalnızca kasa anahtarı yeni ana şifrenizle yeniden korunur. Biyometrik giriş çalışmaya devam eder.",
+  "changePasswordCurrent": "Mevcut ana şifre",
+  "changePasswordNew": "Yeni ana şifre",
+  "changePasswordConfirm": "Yeni ana şifre (tekrar)",
+  "changePasswordSameAsOld": "Yeni şifre mevcut şifreyle aynı olamaz.",
+  "changePasswordButton": "Şifreyi değiştir",
+  "changePasswordWorking": "Yeni anahtar türetiliyor…",
+  "changePasswordWrongCurrent": "Mevcut ana şifre yanlış.",
+  "changePasswordSuccess": "Ana şifreniz değiştirildi.",
+  "generatorTitle": "Şifre üretici",
+  "generatorRegenerate": "Yeniden üret",
+  "generatorLength": "Uzunluk: {length}",
+  "@generatorLength": {
+    "placeholders": {
+      "length": {
+        "type": "int"
+      }
+    }
+  },
+  "generatorUppercase": "Büyük harf (A–Z)",
+  "generatorLowercase": "Küçük harf (a–z)",
+  "generatorDigits": "Rakam (0–9)",
+  "generatorSymbols": "Sembol (!@#…)",
+  "generatorExcludeAmbiguous": "Karışabilecek karakterleri hariç tut (0 O o 1 l I |)",
+  "generatorUse": "Bu şifreyi kullan",
+  "generatorGenerateButton": "Şifre üret",
+  "reportTitle": "Güvenlik raporu",
+  "reportAllGood": "Her şey yolunda",
+  "reportAllGoodBody": "Zayıf veya tekrar kullanılan şifre bulunamadı.",
+  "reportWeakTitle": "Zayıf şifreler",
+  "reportWeakBody": "Bu şifreler kolay tahmin edilebilir. Şifre üreticiyle güçlü bir şifre oluşturmanız önerilir.",
+  "reportReusedTitle": "Tekrar kullanılan şifreler",
+  "reportReusedBody": "Aynı şifre birden fazla hesapta kullanılıyor. Biri ele geçirilirse diğerleri de risk altına girer.",
+  "reportReusedGroup": "{count} kayıt aynı şifreyi kullanıyor",
+  "@reportReusedGroup": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reportBanner": "{count, plural, =1{1 güvenlik uyarısı} other{{count} güvenlik uyarısı}}",
+  "@reportBanner": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reportBannerAction": "İncele",
+  "backupTitle": "Yedekleme",
+  "backupIntro": "Yedek dosyası, ana şifrenizden ayrı bir yedek şifresiyle şifrelenir. Dosyayı nereye kaydedeceğinizi siz seçersiniz; KilitDepo hiçbir yere göndermez.",
+  "backupExportTitle": "Yedek oluştur",
+  "backupPasswordLabel": "Yedek şifresi",
+  "backupPasswordConfirm": "Yedek şifresi (tekrar)",
+  "backupPasswordWarning": "Yedek şifresini unutursanız yedek AÇILAMAZ. Ana şifrenizden farklı, güçlü bir şifre seçin ve güvenli bir yerde saklayın.",
+  "backupExportButton": "Yedeği kaydet",
+  "backupExporting": "Yedek şifreleniyor…",
+  "backupExported": "Yedek kaydedildi ({count} kayıt).",
+  "@backupExported": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupExportCancelled": "Kaydetme iptal edildi.",
+  "backupEmptyVault": "Kasanızda yedeklenecek kayıt yok.",
+  "backupImportTitle": "Yedekten geri yükle",
+  "backupImportBody": "Yedekteki kayıtlar kasanızla birleştirilir. Hiçbir kayıt silinmez; aynı kayıt her iki yerde de varsa daha yakın tarihte güncellenmiş olan kalır.",
+  "backupChooseFile": "Yedek dosyası seç",
+  "backupSelectedFile": "Seçilen dosya: {name}",
+  "@backupSelectedFile": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "backupDecryptButton": "Yedeği aç",
+  "backupDecrypting": "Yedek çözülüyor…",
+  "backupWrongPassword": "Yedek şifresi yanlış veya dosya değiştirilmiş.",
+  "backupInvalidFile": "Bu dosya geçerli bir KilitDepo yedeği değil.",
+  "backupPreview": "{total} kayıt bulundu: {added} yeni, {updated} güncellenecek, {skipped} değişmeyecek.",
+  "@backupPreview": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "added": {
+        "type": "int"
+      },
+      "updated": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "backupImportButton": "Kasaya aktar",
+  "backupImported": "{added} kayıt eklendi, {updated} kayıt güncellendi.",
+  "@backupImported": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      },
+      "updated": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTitle": "Ayarlar",
+  "settingsSecurity": "Güvenlik",
+  "settingsAppearance": "Görünüm",
+  "settingsData": "Veri",
+  "settingsInfo": "Bilgi",
+  "settingsBiometric": "Biyometrik giriş",
+  "settingsBiometricOn": "Parmak izi / Face ID ile açılabilir",
+  "settingsBiometricOff": "Kapalı",
+  "settingsBiometricUnavailable": "Bu cihazda kullanılamıyor",
+  "settingsBiometricConfirmTitle": "Biyometrik girişi aç",
+  "settingsBiometricConfirmBody": "Güvenliğiniz için ana şifrenizi girin.",
+  "settingsBiometricEnabled": "Biyometrik giriş açıldı.",
+  "settingsBiometricDisabled": "Biyometrik giriş kapatıldı.",
+  "settingsBiometricFailed": "Biyometrik giriş açılamadı.",
+  "settingsConfirm": "Onayla",
+  "settingsAutoLock": "Otomatik kilit",
+  "settingsAutoLockSubtitle": "{duration} hareketsizlikten sonra",
+  "@settingsAutoLockSubtitle": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsClipboard": "Pano temizleme",
+  "settingsClipboardSubtitle": "Kopyalanan şifre {duration} sonra silinir",
+  "@settingsClipboardSubtitle": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsTheme": "Tema",
+  "themeSystem": "Sistem",
+  "themeLight": "Açık",
+  "themeDark": "Koyu",
+  "settingsLastBackupNever": "Henüz yedek alınmadı",
+  "settingsLastBackup": "Son yedek: {date}",
+  "@settingsLastBackup": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "durationSeconds": "{count} saniye",
+  "@durationSeconds": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "durationMinutes": "{count} dakika",
+  "@durationMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "aboutDescription": "KilitDepo, şifrelerinizi yalnızca kendi cihazınızda, güçlü şifrelemeyle saklayan çevrimdışı bir şifre yöneticisidir. Hesaplarınızı tek bir yerde, kimseyle paylaşmadan güvenle yönetmek isteyen herkes için tasarlandı.",
+  "aboutVersion": "Sürüm {version}",
+  "@aboutVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutPrivacyTitle": "Gizlilik ilkelerimiz",
+  "aboutPrivacy1": "Uygulama internete bağlanmaz; hiçbir veri cihazınızdan çıkmaz.",
+  "aboutPrivacy2": "Kullanıcı verisi toplanmaz; analitik veya reklam takibi yoktur.",
+  "aboutPrivacy3": "Tüm veriler AES-256 ile şifrelenir; ana şifreniz hiçbir yerde saklanmaz.",
+  "aboutSecurityTitle": "Güvenlik",
+  "aboutSecurity1": "Argon2id: Ana şifrenizden anahtar üretir; tahmin denemelerini bilinçli olarak yavaşlatır.",
+  "aboutSecurity2": "AES-256-GCM: Şifrelerinizi ve notlarınızı şifreler, en küçük değişikliği bile fark eder.",
+  "aboutSecurity3": "SQLCipher: Veritabanı dosyasının tamamını şifreler.",
+  "aboutSecurity4": "Donanım destekli anahtar saklama: Anahtarlar iOS Keychain ve Android Keystore ile korunur.",
+  "aboutLicenses": "Açık kaynak lisansları",
+  "guideSearchHint": "Talimatlarda ara",
+  "guideNoResults": "Aramanızla eşleşen bölüm bulunamadı.",
+  "guideStepsTitle": "Adımlar",
+  "guideTipsTitle": "İpuçları",
+  "guidePromptTitle": "Kasanız hazır",
+  "guidePromptBody": "Kullanma talimatına göz atmak ister misiniz?",
+  "guidePromptOpen": "Talimatı aç",
+  "guidePromptLater": "Şimdi değil",
+  "clipboardClearNow": "Şimdi temizle",
+  "navVault": "Kasa",
+  "navGenerator": "Şifre Üretici",
+  "navReport": "Rapor",
+  "navSettings": "Ayarlar",
+  "swipeCopy": "Kopyala",
+  "swipeFavorite": "Favori",
+  "reportScore": "Güvenlik puanı",
+  "reportScoreExcellent": "Mükemmel",
+  "reportScoreGood": "İyi, ama iyileştirilebilir",
+  "reportScoreFair": "Orta, iyileştirme gerekli",
+  "reportScorePoor": "Zayıf, hemen ilgilenin",
+  "reportWeakCount": "Zayıf şifre",
+  "reportReusedCount": "Tekrar kullanılan",
+  "reportReusedWith": "{title} ile aynı",
+  "@reportReusedWith": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "setupStepOf": "Adım {current}/{total}",
+  "@setupStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "setupStepPasswordTitle": "Ana şifrenizi belirleyin",
+  "setupStepWarningTitle": "Bunu bilmeniz önemli",
+  "setupStepWarningBody": "KilitDepo şifrelerinizi yalnızca bu cihazda, ana şifrenizden türetilen bir anahtarla şifreler. Ana şifreniz hiçbir yerde saklanmaz; bu yüzden onu sıfırlayamayız veya size hatırlatamayız.",
+  "setupStepBiometricTitle": "Hızlı giriş",
+  "setupStepBiometricBody": "Kasanızı her seferinde ana şifre yazmadan, parmak izi veya yüz tanıma ile açabilirsiniz. Bu ayarı daha sonra Ayarlar'dan değiştirebilirsiniz.",
+  "setupNext": "İleri",
+  "setupBack": "Geri",
+  "entrySectionAccount": "Hesap",
+  "entrySectionPassword": "Şifre",
+  "entrySectionOther": "Diğer",
+  "setupPreviousVaultMissing": "Bu cihazda önceki bir kasanın anahtarı bulundu ama kasa verisi yoktu (örneğin uygulama silinip yeniden yüklendiyse). Yeni bir kasa oluşturun; yedeğiniz varsa kurulumdan sonra Ayarlar > Yedekleme'den geri yükleyebilirsiniz.",
+  "settingsDynamicColor": "Duvar kağıdı renkleri",
+  "settingsDynamicColorSubtitle": "Uygulama renklerini telefonunuzun duvar kağıdına uydurur (Material You)",
+  "vaultSelectEntry": "Ayrıntılarını görmek için soldan bir kayıt seçin.",
+  "detailCopyUsernameShort": "Kullanıcı adı",
+  "detailCopyPasswordShort": "Şifre",
+  "entryMoreActions": "Diğer işlemler",
+  "loginOrPassword": "veya ana şifreyle",
+  "generatorLengthLabel": "Uzunluk",
+  "generatorCharsets": "Karakterler",
+  "reportChangePassword": "Değiştir",
+  "settingsTrueBlack": "Tam siyah zemin",
+  "settingsTrueBlackSubtitle": "Koyu temada zemin tam siyah olur (OLED ekranlarda pil tasarrufu)",
+  "commonUndo": "Geri al",
+  "entryDeletedUndo": "\"{title}\" silindi",
+  "@entryDeletedUndo": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "generatorModeRandom": "Rastgele",
+  "generatorModeWords": "Kelimeler",
+  "generatorWordCount": "Kelime sayısı",
+  "generatorWordCountValue": "{count} kelime",
+  "@generatorWordCountValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "generatorSeparator": "Ayırıcı",
+  "generatorCapitalize": "Kelimeleri büyük harfle başlat",
+  "generatorAddNumber": "Sonuna sayı ekle",
+  "generatorEntropy": "Tahmini güç: yaklaşık {bits} bit",
+  "@generatorEntropy": {
+    "placeholders": {
+      "bits": {
+        "type": "int"
+      }
+    }
+  },
+  "entryAppearance": "Görünüm",
+  "entryAppearanceDefault": "Baş harf, otomatik renk",
+  "entryAppearanceIcon": "Simge",
+  "entryAppearanceColor": "Renk",
+  "entryAppearanceLetter": "Harf",
+  "entryAppearanceAuto": "Otomatik",
+  "entryAppearanceReset": "Varsayılana dön",
+  "entryAppearanceDone": "Tamam",
+  "entryIconBank": "Banka",
+  "entryIconCard": "Kart",
+  "entryIconWallet": "Cüzdan",
+  "entryIconCart": "Alışveriş",
+  "entryIconBag": "Mağaza",
+  "entryIconEmail": "E-posta",
+  "entryIconChat": "Mesajlaşma",
+  "entryIconPhone": "Telefon",
+  "entryIconPeople": "Sosyal",
+  "entryIconWork": "İş",
+  "entryIconSchool": "Okul",
+  "entryIconGame": "Oyun",
+  "entryIconMusic": "Müzik",
+  "entryIconVideo": "Video",
+  "entryIconPhoto": "Fotoğraf",
+  "entryIconCloud": "Bulut",
+  "entryIconComputer": "Bilgisayar",
+  "entryIconCode": "Yazılım",
+  "entryIconWifi": "Wi-Fi",
+  "entryIconHome": "Ev",
+  "entryIconCar": "Araba",
+  "entryIconFlight": "Seyahat",
+  "entryIconHealth": "Sağlık",
+  "entryIconFitness": "Spor",
+  "entryIconFood": "Yemek",
+  "entryIconCoffee": "Kafe",
+  "entryIconId": "Kimlik",
+  "entryIconShield": "Güvenlik",
+  "entryIconKey": "Anahtar",
+  "entryIconLock": "Kilit",
+  "entryIconStar": "Yıldız",
+  "entryIconGlobe": "Web",
+  "entryIconBook": "Kitap",
+  "entryIconNews": "Haber",
+  "entryIconGift": "Hediye",
+  "entryIconStock": "Yatırım",
+  "entryIconPet": "Evcil hayvan",
+  "entryIconTools": "Araçlar",
+  "entryColorTeal": "Petrol",
+  "entryColorGreen": "Yeşil",
+  "entryColorOlive": "Zeytin",
+  "entryColorBlue": "Mavi",
+  "entryColorIndigo": "Lacivert",
+  "entryColorPurple": "Mor",
+  "entryColorPink": "Pembe",
+  "entryColorRed": "Kırmızı",
+  "entryColorOrange": "Turuncu",
+  "entryColorAmber": "Kehribar",
+  "entryColorBrown": "Kahverengi",
+  "entryColorSlate": "Gri",
+  "vaultQuickAccess": "Favoriler",
+  "entryOpenDetails": "Ayrıntıları aç",
+  "issueWeakBadge": "Zayıf",
+  "issueReusedBadge": "Tekrar",
+  "detailIssueWeak": "Bu şifre zayıf; tahmin edilmesi kolay olabilir.",
+  "detailIssueReused": "Bu şifre şu kayıtlarda da kullanılıyor: {titles}",
+  "@detailIssueReused": {
+    "placeholders": {
+      "titles": {
+        "type": "String"
+      }
+    }
+  },
+  "detailIssueChange": "Şifreyi değiştir",
+  "setupTipsTitle": "İyi bir ana şifre nasıl seçilir?",
+  "setupTipWords": "4–6 rastgele kelime kullanın: hem güçlü hem yazması kolay.",
+  "setupTipUnique": "Başka bir yerde kullandığınız şifreyi kullanmayın.",
+  "setupTipPersonal": "Adınız, doğum tarihiniz, takımınız gibi kişisel bilgilerden kaçının.",
+  "setupSuggest": "Bana bir öneri üret",
+  "setupSuggestionUse": "Kullan",
+  "setupSuggestionAnother": "Başka öneri",
+  "setupSuggestionHint": "Öneriyi kullanırsanız tekrar alanını kendiniz yazın; böylece şifreyi bir kez de elinizle yazmış olursunuz.",
+  "setupWeakTitle": "Bu ana şifre zayıf",
+  "setupWeakBody": "Ana şifreniz tüm kasanızı korur. Daha uzun bir şifre ya da birkaç rastgele kelime önerilir.",
+  "setupWeakChange": "Şifreyi değiştir",
+  "setupWeakContinue": "Yine de devam et",
+  "setupStoreTitle": "Ana şifrenizi nasıl saklamalısınız?",
+  "setupStorePaper": "Kâğıda yazın ve güvenli bir yerde saklayın.",
+  "setupStoreNoPhone": "Telefonun notlarına veya fotoğraflarına kaydetmeyin.",
+  "setupStoreBackup": "Düzenli yedek alın (Ayarlar > Yedekleme).",
+  "csvImportTitle": "Başka uygulamadan içe aktar",
+  "csvImportSettingsSubtitle": "Chrome, Safari, Bitwarden, 1Password… (CSV dosyası)",
+  "csvImportIntro": "Başka bir şifre yöneticisinden veya tarayıcıdan dışa aktardığınız CSV dosyasındaki kayıtları kasanıza ekler. Mevcut kayıtlarınız silinmez veya değiştirilmez.",
+  "csvImportPlainWarning": "CSV dosyaları şifrelerinizi düz metin olarak içerir. İçe aktardıktan sonra dosyayı mutlaka silin ve kimseyle paylaşmayın.",
+  "csvImportHowTo": "Nasıl dışa aktarılacağını Kullanma Talimatı'ndaki \"Başka uygulamadan aktarma\" bölümünde bulabilirsiniz.",
+  "csvImportPick": "CSV dosyası seç",
+  "csvImportReading": "Dosya okunuyor…",
+  "csvImportFormatLabel": "Algılanan biçim: {format}",
+  "@csvImportFormatLabel": {"placeholders": {"format": {"type": "String"}}},
+  "csvFormatChrome": "Chrome / Edge / Brave",
+  "csvFormatFirefox": "Firefox",
+  "csvFormatApple": "Safari / Apple Passwords",
+  "csvFormatBitwarden": "Bitwarden",
+  "csvFormatOnePassword": "1Password",
+  "csvFormatProtonPass": "Proton Pass",
+  "csvFormatKeePass": "KeePass / KeePassXC",
+  "csvFormatGeneric": "Genel CSV",
+  "csvImportToAdd": "{count} kayıt eklenecek",
+  "@csvImportToAdd": {"placeholders": {"count": {"type": "int"}}},
+  "csvImportDuplicates": "{count} kayıt zaten kasada olduğu için atlanacak",
+  "@csvImportDuplicates": {"placeholders": {"count": {"type": "int"}}},
+  "csvImportNoPassword": "{count} satır şifresi boş olduğu için atlanacak",
+  "@csvImportNoPassword": {"placeholders": {"count": {"type": "int"}}},
+  "csvImportTotp": "{count} kayıttaki 2 adımlı doğrulama (TOTP) anahtarı güvenlik nedeniyle aktarılmayacak",
+  "@csvImportTotp": {"placeholders": {"count": {"type": "int"}}},
+  "csvImportNothing": "Eklenecek yeni kayıt yok.",
+  "csvImportPreviewList": "Eklenecek kayıtlar",
+  "csvImportMore": "+{count} kayıt daha",
+  "@csvImportMore": {"placeholders": {"count": {"type": "int"}}},
+  "csvImportConfirm": "İçe aktar",
+  "csvImportOtherFile": "Başka dosya seç",
+  "csvImportImporting": "Kayıtlar şifrelenerek ekleniyor…",
+  "csvImportDone": "{count} kayıt kasanıza eklendi.",
+  "@csvImportDone": {"placeholders": {"count": {"type": "int"}}},
+  "csvImportDeleteReminder": "Şimdi orijinal CSV dosyasını silin: dosya şifrelerinizi düz metin olarak içeriyor ve KilitDepo onu sizin yerinize silemez.",
+  "csvImportFinish": "Tamam",
+  "csvImportErrorEmpty": "Dosyada içe aktarılacak kayıt bulunamadı.",
+  "csvImportErrorEncoding": "Dosya okunamadı. Lütfen CSV (UTF-8) biçiminde dışa aktarın.",
+  "csvImportErrorTooLarge": "Dosya çok büyük (en fazla 10 MB ve 10.000 kayıt).",
+  "csvImportErrorColumns": "Bu dosya tanınamadı: başlık/adres ve şifre sütunları bulunamadı.",
+  "csvImportScreenTitle": "CSV'den içe aktar",
+  "entrySaveErrorLocked": "Kasa kilitlendiği için kaydedilemedi. Kilidi açıp tekrar deneyin.",
+  "entrySaveErrorInvalid": "Kaydedilemedi: başlık ve şifre alanları boş olamaz.",
+  "entrySaveErrorStorageFull": "Cihazda yeterli boş alan olmadığı için kaydedilemedi.",
+  "entrySaveErrorBusy": "Veritabanı şu an meşgul olduğu için kaydedilemedi. Birkaç saniye sonra tekrar deneyin.",
+  "entrySaveErrorDatabase": "Veritabanına yazılamadı (hata kodu: {code}). Lütfen tekrar deneyin.",
+  "@entrySaveErrorDatabase": {"placeholders": {"code": {"type": "String"}}},
+  "entrySaveErrorCrypto": "Şifreleme sırasında bir sorun oluştuğu için kaydedilemedi.",
+  "entrySaveErrorUnknown": "Kayıt kaydedilemedi (ayrıntı: {detail}). Lütfen tekrar deneyin.",
+  "@entrySaveErrorUnknown": {"placeholders": {"detail": {"type": "String"}}}
+}

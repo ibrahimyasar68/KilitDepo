@@ -412,5 +412,8 @@ Kullanıcı gerçek telefonda denedi, iki hata bildirdi:
   rehberliği (zayıf şifre engellemez, uyarır; **"ara ara ana şifre iste" hatırlatması istenmedi**); CSV
   içe aktarma (birebir aynılar atlanır, TOTP aktarılmaz); otomatik doldurma pas geçildi; üreticide seçili
   çipler (karakterler + ayırıcı) ana düğme renginde.
-- **Asla izinsiz git işlemi yapma** (bir kez yanlışlıkla `git init` çalıştı, hemen geri alındı; proje git
-  deposu değil).
+- **Git / GitHub:** 14 Kasım 2026'da kullanıcının isteğiyle proje git deposu yapıldı ve
+  `git@github.com:ibrahimyasar68/KilitDepo.git` (dal `main`) adresine gönderildi (SSH anahtarı
+  `~/.ssh/id_ed25519_skorekran`). Depo içi kimlik: `ibrahimyasar68` /
+  `ibrahimyasar68@users.noreply.github.com` (kişisel e-posta herkese açık commit'lere yazılmasın diye).
+  **Yine de kullanıcı istemedikçe commit / push yapma.**

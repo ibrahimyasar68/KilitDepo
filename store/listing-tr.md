@@ -60,6 +60,44 @@ GİZLİLİK
 KilitDepo, İY Labs tarafından geliştirilmiştir. Uygulama içi Kullanma Talimatı tüm özellikleri adım adım anlatır.
 ```
 
+## Sürüm notları (dil başına en fazla 500 karakter)
+
+Play Console > sürüm oluştururken "Sürüm notları" alanına, dil etiketleriyle birlikte yapıştırın.
+
+### Dahili test
+
+```
+<tr-TR>
+İlk test sürümü.
+</tr-TR>
+```
+
+### Üretim — 1.0.0 (ilk sürüm)
+
+```
+<tr-TR>
+KilitDepo'nun ilk sürümü!
+
+• Şifreleriniz yalnızca cihazınızda, güçlü şifrelemeyle saklanır; internet izni yoktur
+• Ana şifre veya parmak izi / yüz tanıma ile açma
+• Tek dokunuşla kopyalama, pano otomatik temizlenir
+• Rastgele ve kelime tabanlı şifre üretici
+• Zayıf ve tekrar kullanılan şifreleri bulan güvenlik raporu
+• Şifreli yedek ve diğer uygulamalardan CSV ile aktarma
+</tr-TR>
+```
+
+### Kısa seçenek
+
+```
+<tr-TR>
+İlk sürüm: çevrimdışı, şifreli ve reklamsız şifre kasası. Biyometrik açma, şifre üretici, güvenlik raporu, şifreli yedek ve CSV ile aktarma.
+</tr-TR>
+```
+
+Sonraki güncellemelerde yalnızca değişenleri kısaca yazın (ör.
+`• Biyometri iptal edildiğinde gereksiz uyarı kaldırıldı • Favoriler daha kompakt gösteriliyor`).
+
 ## Diğer alanlar
 
 | Alan | Değer |

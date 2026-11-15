@@ -408,8 +408,12 @@ Kullanıcı gerçek telefonda denedi, iki hata bildirdi:
    **Otomatik doldurma (Android Autofill / iOS AutoFill): kullanıcı 11 Kasım'da pas geçti — istemedikçe
    önerme.** Her kaydın kalıcı `uuid`'si var; **şema sürümü 2** (drift `onUpgrade`; yeni sütun eklerken
    3'e çıkar ve geçiş testi yaz, bkz. `design6_test.dart`).
-3b. **Yayın:** dosyalar hazır (§10o). Kalan: kullanıcı yükleme anahtarını oluşturacak, `key.properties`
-   dolduracak; ardından imzalı AAB derlenip doğrulanacak. Her güncellemede `pubspec.yaml` sürüm kodu artmalı.
+3b. **Yayın:** dosyalar hazır (§10o). **15 Kasım: yükleme anahtarı oluşturuldu**
+   (`~/keys/kilitdepo-upload.jks`, alias `upload`, sertifika `CN=Ibrahim YASAR … C=TR`, SHA-256
+   `5dcb8ffb…4b93c`); `android/key.properties` dolu (git dışı). İmzalı AAB (73,4 MB) ve APK doğrulandı.
+   **Dikkat:** eski debug imzalı kurulumun üzerine yeni APK kurulamaz (imza farkı) → önce uygulama içi
+   yedek, kaldır, kur, geri yükle. Play'den kurulan sürüm Google'ın uygulama imzasını taşır; yandan
+   yüklenen sürümle yine çakışır. Sıradaki: Play Console'a yükleme (kullanıcı). Her güncellemede `pubspec.yaml` sürüm kodu artmalı.
    (Obfuscate önerisi reddedildi — tekrar önerme.)
 4. Küçük: küçük logolarda (kurulum, giriş) "İY Labs" yazısı okunmayacak kadar küçük — kullanıcı
    istemedikçe dokunma.

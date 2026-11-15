@@ -1,7 +1,7 @@
 # KilitDepo — Devam Notları
 
 > Yeni bir oturumda kaldığımız yerden devam etmek için hazırlandı.
-> Son güncelleme: **13 Kasım 2026**. Durum: Faz 1–5, tasarım turları (10c–10l), benzer uygulama
+> Son güncelleme: **15 Kasım 2026**. Durum: Faz 1–5, tasarım turları (10c–10l), benzer uygulama
 > araştırmasından çıkan öneriler ve CSV içe aktarma tamam; **323 test geçiyor**, `flutter analyze` temiz.
 > **Release APK 13 Kasım 09:38'de derlendi** (78,4 MB, sürüm 1.0.0, İNTERNET izni yok, hâlâ debug anahtarıyla
 > imzalı). iOS hiç derlenmedi (Xcode yok). Uygulama değişiklikleri emülatörde kullanıcı tarafından
@@ -379,6 +379,24 @@ Kullanıcı gerçek telefonda denedi, iki hata bildirdi:
 - **Gölgeler artırıldı:** `cardShadows` açık 0,18→0,24 (blur 22, offset 9), koyu 0,45→0,55; Card teması
   elevation 3, gölge rengi 0,55.
 
+## 10o. Google Play hazırlığı (15 Kasım 2026)
+
+- **İmza:** `android/app/build.gradle.kts` `android/key.properties` varsa yayın derlemesini o anahtarla
+  imzalar; yoksa uyarı verip debug anahtarı kullanır (Play kabul etmez). Şablon:
+  `android/key.properties.example`. Anahtarı **kullanıcı kendisi** oluşturur (komut rehberde;
+  Android Studio JBR `keytool`, alias `upload`, dosya `~/keys/kilitdepo-upload.jks`). Claude parolayı
+  görmez / girmez. `key.properties` ve `*.jks` gitignore'da.
+- `ndk { debugSymbolLevel = "SYMBOL_TABLE" }` (AAB'de semboller). Kod gizleme yok.
+- **AAB zorunlu** (Play yeni uygulamada APK almıyor) — B5 reddi bu yüzden yayın için geçersiz; kullanıcıya
+  açıklandı. `flutter build appbundle --release` → 73,4 MB (şu an debug imzalı, anahtar bekleniyor).
+- `store/`: `listing-tr.md` (ad/kısa/tam açıklama; `python3 tool/check_store_listing.py` sınır
+  kontrolü), `graphics/icon-512.png` + `feature-graphic.png` (`python3 tool/generate_store_assets.py`),
+  `screenshots/01…08` 1080×1920 (`flutter test tool/store/screenshots_test.dart --update-goldens`; örnek
+  veriler marka adı içermez), `play-console-rehberi.md` (form yanıtları: veri toplanmıyor, 18+, reklam
+  yok, Araçlar; kişisel hesaplarda 12 test kullanıcısı / 14 gün kapalı test).
+- `docs/privacy-policy.md` (TR + EN özet). Mağazadaki bağlantı GitHub'daki bu dosya; **GitHub'a gönderilmesi
+  kullanıcı onayına bağlı.**
+
 ## 11. Açık işler (öncelik sırasıyla öneri)
 
 1. **iOS doğrulama:** Kullanıcı Xcode + CocoaPods kurunca (`sudo xcode-select …`, `brew install
@@ -390,8 +408,9 @@ Kullanıcı gerçek telefonda denedi, iki hata bildirdi:
    **Otomatik doldurma (Android Autofill / iOS AutoFill): kullanıcı 11 Kasım'da pas geçti — istemedikçe
    önerme.** Her kaydın kalıcı `uuid`'si var; **şema sürümü 2** (drift `onUpgrade`; yeni sütun eklerken
    3'e çıkar ve geçiş testi yaz, bkz. `design6_test.dart`).
-3b. **Yayın hazırlığı (kullanıcı istediğinde):** release imzalama anahtarı (şu an debug anahtarı),
-   sürüm numarası artırma. (APK bölme / obfuscate önerisi daha önce reddedildi — tekrar önerme.)
+3b. **Yayın:** dosyalar hazır (§10o). Kalan: kullanıcı yükleme anahtarını oluşturacak, `key.properties`
+   dolduracak; ardından imzalı AAB derlenip doğrulanacak. Her güncellemede `pubspec.yaml` sürüm kodu artmalı.
+   (Obfuscate önerisi reddedildi — tekrar önerme.)
 4. Küçük: küçük logolarda (kurulum, giriş) "İY Labs" yazısı okunmayacak kadar küçük — kullanıcı
    istemedikçe dokunma.
 

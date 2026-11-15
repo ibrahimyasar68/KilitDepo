@@ -1,8 +1,23 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
+
+// Yayın (yükleme) imzası: android/key.properties varsa kullanılır.
+// GÜVENLİK: key.properties ve .jks dosyası git'e GİRMEZ (android/.gitignore);
+// anahtar dosyası proje klasörünün dışında tutulur. Şablon:
+// android/key.properties.example
+val keystorePropertiesFile = rootProject.file("key.properties")
+val keystoreProperties = Properties().apply {
+    if (keystorePropertiesFile.exists()) {
+        FileInputStream(keystorePropertiesFile).use { load(it) }
+    }
+}
+val hasReleaseKey = keystorePropertiesFile.exists()
 
 android {
     namespace = "com.iylabs.kilitdepo"
@@ -30,11 +45,32 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (hasReleaseKey) {
+            create("release") {
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+                storeFile = file(keystoreProperties.getProperty("storeFile"))
+                storePassword = keystoreProperties.getProperty("storePassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            // key.properties yoksa (ör. başka bir bilgisayar) debug anahtarıyla
+            // imzalanır: telefona kurmak için yeterli, Play'e YÜKLENEMEZ.
+            signingConfig = if (hasReleaseKey) {
+                signingConfigs.getByName("release")
+            } else {
+                logger.warn("KilitDepo: android/key.properties yok — yayın derlemesi DEBUG anahtarıyla imzalanıyor (Play'e yüklenemez).")
+                signingConfigs.getByName("debug")
+            }
+            // Play Console'daki "yerel hata ayıklama sembolleri" uyarısı için:
+            // çökme raporları okunur olur; kaynak kodu açığa çıkarmaz.
+            ndk {
+                debugSymbolLevel = "SYMBOL_TABLE"
+            }
         }
     }
 }

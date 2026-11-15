@@ -1,0 +1,14 @@
+# KilitDepo yayın (yükleme) imzası — ŞABLON
+#
+# 1) Bu dosyayı "key.properties" adıyla kopyalayın (aynı klasöre: android/).
+# 2) Değerleri kendi anahtarınıza göre doldurun.
+# 3) key.properties ve .jks dosyası ASLA git'e / GitHub'a eklenmez
+#    (android/.gitignore bunları zaten dışarıda bırakır).
+#
+# Anahtar dosyasını proje klasörünün DIŞINDA tutun ve yedekleyin
+# (ör. şifreli bir USB bellek). Parolaları KilitDepo'nun kendisinde saklayabilirsiniz.
+
+storePassword=ANAHTAR_DEPOSU_PAROLASI
+keyPassword=ANAHTAR_PAROLASI
+keyAlias=upload
+storeFile=/Users/KULLANICI_ADI/keys/kilitdepo-upload.jks
